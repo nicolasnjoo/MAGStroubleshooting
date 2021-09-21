@@ -376,8 +376,12 @@ function Search(a) {
                     id: a.id,
                     name: a.label
                 })
-		    /*test to see if we can search the id*/
+		    /*test to see if we can search the id and diagnosis*/
 		&& g.test(a.id.toLowerCase()) && c.push({
+                    id: a.id,
+                    name: a.label
+                })
+		&& g.test(a.diagnosis.toLowerCase()) && c.push({
                     id: a.id,
                     name: a.label
                 })
