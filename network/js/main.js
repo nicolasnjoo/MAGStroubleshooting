@@ -376,6 +376,11 @@ function Search(a) {
                     id: a.id,
                     name: a.label
                 })
+		    /*test to see if we can search the id*/
+		g.test(a.id.toLowerCase()) && c.push({
+                    id: a.id,
+                    name: a.label
+                })
             });
             c.length ? (b = !0, nodeActive(c[0].id)) : b = showCluster(a);
             a = ["<b>Search Results: </b>"];
