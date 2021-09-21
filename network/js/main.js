@@ -377,7 +377,7 @@ function Search(a) {
                     name: a.label
                 })
 		    /*test to see if we can search the id*/
-		g.test(a.id.toLowerCase()) && c.push({
+		&& g.test(a.id.toLowerCase()) && c.push({
                     id: a.id,
                     name: a.label
                 })
