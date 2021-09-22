@@ -370,7 +370,7 @@ function Search(a) {
         this.lastSearch = a;
         this.results.empty();
         if (2 >= a.length) this.results.html("<i>You must search for a name with a minimum of 3 letters.</i>");
-        else {
+        /*else {
             sigInst.iterNodes(function (a) {
 		    if(g.test(a.diagnosis.toLowerCase()){
 		       c.push({
@@ -393,7 +393,7 @@ function Search(a) {
                     id: a.id,
                     name: a.label
                 })*/
-            });
+            }*/);
             c.length ? (b = !0, nodeActive(c[0].id)) : b = showCluster(a);
             a = ["<b>Search Results: </b>"];
             if (1 < c.length) for (var d = 0, h = c.length; d < h; d++) a.push('<a href="#' + c[d].name + '" onclick="nodeActive(\'' + c[d].id + "')\">" + c[d].name + "</a>");
