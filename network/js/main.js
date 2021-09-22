@@ -378,7 +378,7 @@ function Search(a) {
                     	name: a.label
                 	})
 	    		}
-		if(g.test(a.label.toLowerCase()){
+		if(g.test(a.diagnosis.toLowerCase()){
 		       c.push({
                     	id: a.id,
                     	name: a.label
