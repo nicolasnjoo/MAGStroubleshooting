@@ -372,10 +372,18 @@ function Search(a) {
         if (2 >= a.length) this.results.html("<i>You must search for a name with a minimum of 3 letters.</i>");
         else {
             sigInst.iterNodes(function (a) {
-                g.test(a.label.toLowerCase()) && c.push({
-                    id: a.id,
-                    name: a.label
-                })
+		    if(g.test(a.label.toLowerCase()){
+		       c.push({
+                    	id: a.id,
+                    	name: a.label
+                	})
+	    		}
+		if(g.test(a.label.toLowerCase()){
+		       c.push({
+                    	id: a.id,
+                    	name: a.label
+                	})
+	    		}
 		    /*test to see if we can search the id and diagnosis
 		&& g.test(a.id.toLowerCase()) && c.push({
                     id: a.id,
