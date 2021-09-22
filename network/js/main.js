@@ -374,7 +374,7 @@ function Search(a) {
             sigInst.iterNodes(function (a) {
 		    g.test(a.label.toLowerCase()) && c.push({
                     id: a.id,
-                    /*name: a.label*/
+                    name: a.label
                 })
 		    /*if(g.test(a.label.toLowerCase()){
 		       c.push({
