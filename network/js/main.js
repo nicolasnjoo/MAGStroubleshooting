@@ -373,8 +373,8 @@ function Search(a) {
         else {
             sigInst.iterNodes(function (a) {
 		    //below is the line to be implemented once we have a tags attribute
-		    //g.test(a.attr.attributes.tags.toLowerCase()) && c.push({
-		    g.test(a.label.toLowerCase()) && c.push({
+		    g.test(a.attr.attributes.tags.toLowerCase()) && c.push({
+		    //g.test(a.label.toLowerCase()) && c.push({
                     id: a.id,
                     name: a.label
                 })
